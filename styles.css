@@ -148,3 +148,76 @@
 }
 
 /* Services Section */
+.services {
+    padding: 8rem calc((100vw - 1200px) / 2);
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+}
+
+.services-img {
+    width: 100%;
+    height: 100%;
+}
+
+.topline {
+    color: var(--red);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.services-heading {
+    margin-bottom: 1rem;
+    font-size: clamp(2rem, 6vw, 3rem);
+}
+
+.services-features {
+    list-style: none;
+}
+
+.services-feature {
+    margin-bottom: 1.5rem;
+    font-size: clamp(1rem, 5vw, 1.2rem);
+}
+
+.fa-check-circle {
+    margin-right: 0.5rem;
+    color: var(--red);
+}
+
+@media screen and (max-width: 768px) {
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Membership Section */
+.membership {
+    background: var(--black);
+    color: var(--white);
+    padding: 6rem calc((100vw - 1100px) / 2);
+    text-align: center;
+}
+
+.membership h1 {
+    margin-bottom: 1rem;
+    font-size: clamp(2rem, 5vw, 3rem);
+    padding: 0 1rem;
+}
+
+.membership-desc {
+    margin-bottom: 3rem;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    padding: 1rem;
+}
+
+.membership-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+}
